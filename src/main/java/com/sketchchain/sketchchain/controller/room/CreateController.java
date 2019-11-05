@@ -16,4 +16,8 @@ public class CreateController {
        roomRepository.save(dto.toEntity());
     }
 
+    @PatchMapping("/room/join")
+    @ResponseBody
+    public String joinRoom(@RequestParam String roomId) { return ("roomId=" + roomId); }
+
 }
