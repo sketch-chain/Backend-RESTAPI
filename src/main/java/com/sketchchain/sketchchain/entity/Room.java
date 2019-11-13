@@ -10,7 +10,7 @@ public class Room {
 
     @Id
     @GeneratedValue
-    private Long id;
+    private int id;
 
     @Column(length = 16, nullable = false)
     private String name;
